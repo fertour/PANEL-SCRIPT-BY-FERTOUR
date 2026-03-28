@@ -1,0 +1,163 @@
+-- 🔥 FERTOUR HUB v4.56 — The Best Script Hub 🔥
+-- Made by Fertour
+-- YouTube: 
+-- Discord: https://discord.gg/4GVX8Trxr
+
+local Rayfield = loadstring(game:HttpGet(
+	"https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"
+))()
+
+local Player = game.Players.LocalPlayer
+
+-- Fertour Credit Notification
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Made by Fertour",
+    Text = "Support Fertour by liking/subscribing & joining Discord!",
+    Duration = 10
+})
+
+-- Main Window
+local Window = Rayfield:CreateWindow({
+    Name = "🔥Fertour HUB v2.0🔥",
+    Icon = "award",
+    LoadingTitle = "Fertour HUB 'The power you seek'😈",
+    LoadingSubtitle = "By: 🔥Fertour🔥",
+    ConfigurationSaving = { Enabled = false },
+    KeySystem = true,
+    KeySettings = {
+        Title = "🔑 Fertour HUB Key System",
+        Subtitle = "Enter Key to Continue",
+        Note = "Join Discord for key: https://discord.gg/4GVX8Trxr",
+        FileName = "FertourHubKey",
+        SaveKey = true,
+        GrabKeyFromSite = false,
+        Key = {"FERTOURGANTENG"}
+    }
+})
+
+-- Safe Script Loader
+local function loadScript(url)
+    local ok, err = pcall(function()
+        local src = game:HttpGet(url)
+        local fn = assert(loadstring(src), "loadstring failed")
+        fn()
+    end)
+    if not ok then
+        Rayfield:Notify({
+            Title = "Fertour HUB Error",
+            Content = tostring(err),
+            Duration = 6
+        })
+    end
+end
+
+-- TAB 1: SCRIPT GAMES
+local MainTab = Window:CreateTab("SCRIPT ALL", 4483362458)
+
+MainTab:CreateButton({
+    Name = "Panel Fitur",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Panel-Full-Fitur-Fertour/refs/heads/main/Panel%20Fitur%20By%20Fertour")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Fake Donate Fayint",
+    Callback = function()
+        loadScript("https://fayintz.my.id/api/loader/Fake-Donate")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Paranoia",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Script-CMD/refs/heads/main/ADMIN%20CMD%20FERTOUR")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Backdoor BY NoCounterFamily",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Backdoor-By-NoCounterFamily/refs/heads/main/backdoor")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Copy Map By Fertour (1 click)",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Copy-Map-BY-Fertour/refs/heads/main/Copy%20Map%20BY%20Fertour")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Copy Avatar For Hangout",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/Nearastro/Nearastro/refs/heads/main/00CopyAvaFE.lua")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Fly V3 Fertour",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Terbang-V3-BY-Fertour/refs/heads/main/Terbang%20V3%20Fertour")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Walking Speed",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/Walking-Speed/refs/heads/main/Walking%20Speed%20by%20Fertour")
+    end
+})
+
+MainTab:CreateButton({
+    Name = "Infinity Jump",
+    Callback = function()
+        loadScript("https://raw.githubusercontent.com/fertour/infinity-jump-by-fertour/refs/heads/main/infinity%20jump%20fertour")
+    end
+})
+
+-- TAB 2: CREDITS/SUPPORT
+local CreditsTab = Window:CreateTab("CREDITS/SUPPORT", 4483362458)
+
+local CreditsParagraph = CreditsTab:CreateParagraph({
+    Title = "🔥 Credits & Appreciation 🔥",
+    Content = [[
+Script Made By: 🔥 Fertour 🔥
+
+🔥 Big Thanks 🔥
+Special thanks to the Roblox scripting community for inspiration and tools!
+
+🔥 Join Our Community 🔥  
+Click the buttons below to connect with Fertour and get support!
+
+📺 YouTube: 
+💬 Discord: https://discord.gg/4GVX8Trxr
+]]
+})
+
+-- YouTube Button
+CreditsTab:CreateButton({
+    Name = "",
+    Callback = function()
+        setclipboard("")
+        Rayfield:Notify({
+            Title = "",
+            Content = "🔥 updates! 🔥",
+            Duration = 6
+        })
+    end
+})
+
+-- Discord Button
+CreditsTab:CreateButton({
+    Name = "💬 COPY DISCORD LINK 💬",
+    Callback = function()
+        setclipboard("https://discord.gg/4GVX8Trxr")
+        Rayfield:Notify({
+            Title = "📋 Copied!",
+            Content = "🔥 DISCORD LINK COPIED! Join for keys + support! 🔥",
+            Duration = 6
+        })
+    end
+})

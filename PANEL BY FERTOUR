@@ -18,9 +18,9 @@ game.StarterGui:SetCore("SendNotification", {
 
 -- Main Window
 local Window = Rayfield:CreateWindow({
-    Name = "🔥Fertour HUB v2.0🔥",
+    Name = "🔥Fertour HUB NoCounterFamily🔥",
     Icon = "award",
-    LoadingTitle = "Fertour HUB 'The power you seek'😈",
+    LoadingTitle = "Fertour HUB 'The power No Counter Family'😈",
     LoadingSubtitle = "By: 🔥Fertour🔥",
     ConfigurationSaving = { Enabled = false },
     KeySystem = true,

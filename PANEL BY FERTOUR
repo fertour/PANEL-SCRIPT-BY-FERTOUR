@@ -1,163 +1,33 @@
--- 🔥 FERTOUR HUB v4.56 — The Best Script Hub 🔥
--- Made by Fertour
--- YouTube: 
--- Discord: https://discord.gg/4GVX8Trxr
-
-local Rayfield = loadstring(game:HttpGet(
-	"https://raw.githubusercontent.com/SiriusSoftwareLtd/Rayfield/main/source.lua"
-))()
-
-local Player = game.Players.LocalPlayer
-
--- Fertour Credit Notification
-game.StarterGui:SetCore("SendNotification", {
-    Title = "Made by Fertour",
-    Text = "Support Fertour by liking/subscribing & joining Discord!",
-    Duration = 10
-})
-
--- Main Window
-local Window = Rayfield:CreateWindow({
-    Name = "🔥Fertour HUB NoCounterFamily🔥",
-    Icon = "award",
-    LoadingTitle = "Fertour HUB 'The power No Counter Family'😈",
-    LoadingSubtitle = "By: 🔥Fertour🔥",
-    ConfigurationSaving = { Enabled = false },
-    KeySystem = true,
-    KeySettings = {
-        Title = "🔑 Fertour HUB Key System",
-        Subtitle = "Enter Key to Continue",
-        Note = "Join Discord for key: https://discord.gg/4GVX8Trxr",
-        FileName = "FertourHubKey",
-        SaveKey = true,
-        GrabKeyFromSite = false,
-        Key = {"FERTOURGANTENG"}
-    }
-})
-
--- Safe Script Loader
-local function loadScript(url)
-    local ok, err = pcall(function()
-        local src = game:HttpGet(url)
-        local fn = assert(loadstring(src), "loadstring failed")
-        fn()
-    end)
-    if not ok then
-        Rayfield:Notify({
-            Title = "Fertour HUB Error",
-            Content = tostring(err),
-            Duration = 6
-        })
-    end
+-- // Protected by Monsy Obfuscator
+local pKDh1nG1Repc={"0e9cd6f6023c2d0d9802c8564bc45e74c8950ecdabd7578d31cf90698168d54c174b26c03717e3a36645d85b716c4bea150643f1fe686fd4996944cf81d6606bc8c429256c092fab6add884681df3fea3c781fd3d6f53985da286f153f0d17858f4b7215","cb265460d54b1525c8d1680afe6fcb3c64153e1f6e4c90c58ac815021ec081d56cd0ddc32d61cd46239826e88543d1854b30709ca4d52e46670926ee6c73518a4baf04bf266a15731920ccd1c8d8f2632f726939de1515f3769e07d0572e474347fe370d","438204b68121391b2474510c6e56750a622d0eab5619d34bec619cce616a2fd92d6c6530d0b61085ca2fdee36485c22dd89c596f65d10815172655222f9cc881c4433e0f5b3a8a8577872d1fd806ce500c15d51fd022dd5a85b3c46c71c04b041581b8a2","75267b68d171d1d8de24f4e6911c8ad3d225296a20cacc174b159098e681159cbe4baf20618959c4bea974c00c7ed523cf5393352cf5e37e6c43805a6c0223d816a829564bea5c151537d20c0aed54266c67810e6c93207268d316dd22061702728905d1","6c233f431c9c8d795baf7fff542e2688392640dbc09c6a38d4787b0a636c54ee1e430cd5893c26d188edc331f3224b2a0ce3292c7adf260847ab4b0e4319d9854b4acce61004621f7668856c6ccca4cb96f211ce98850754fadcffe385763cb53c26c98c","5143ef4b5b8549f66c4302b87b47810d0a9cd76bcfd3e78ad26c43976cc04b9c9c77d1d054754614dd2773825ec105f03ec0fbc43673ff0edf9b4bbe6247c90d5b5a81ae3ef7c7c39c4311799c51ce078a6cbfa2850266258106d3d33eec08d90e6e239c","47c23715a336e66cc0e3264cce2dbe4784cf4bafd1ead4e4cc78423a9ca70c6115c49cd867498715ccc4d0b804d92a59d743c095080f2f9c66789c24d3102d2c992ce66365e581815017a3dec4312663d615fa5b0dea63e33f546c22ce6f0bde7863cc61","2d5717b8abeac4051a15a29e79c61e2bd5266320500c37ebcded5d1543ef0e20500e41432643f243043c4e3eced1ca150ccc63b78bb82d505e26a32b85cfd32acd3ec5df170cc78a854e9c2fd5367e2eb85f2c16636c15ad3054ddc14b2bcf082fcd44d3","5f074cd1e1636cd3b54b2f9cff88d32f26d94341cb18c1e619bec08ad2c154d19ce969d25c720b266f163e24632c6881d14b13c90a0426c0ab6185d9cf0d06e6c7d9c837056c00d39c8943ce79b34bcf0a786e262f4a463718712aafbec89c24c8377179","cea68b4bafd22b2c6dee3e8bf8713fead960ea8145c0eb37128c8a90c4acd92661f05ed701aff41fa226d96b2cb64bf06eeb520d173cce6e56982a6addde0e6e414bc837001cce4b85ea8acf12eae6b36f224028d3acd92e39c40638474bf026080e2365","1511d9670fc63fba016324270460f978ce0e0509c819da816d696cd8e6234c3d69265ae681e818f60cd329c02663d615af4594250281d3e4ab636fcb0858d1c93c7e402024ca264be97091d0d36f64eb390661ead3153f2b26ec6020c02c719d01501a3c","69ed29ae8145a687269c55a30f4bcece8ac1656c106822aedfc542e0ea436999e94c024625063929234317b23b3879c86324b826c1d176c63c19a976e8c40cd74349680c5605ffab69d7ce51cd6b63c443d7c7c41cd5f5298bc784ebfc1215f08ad51585","8af8c06ddd2d858c4578c64ad371870d688ad04361566c20619f2a7915dfcef29450f5ec8837e7c7ea735ba722e724e77e86c53719eb37182c2d9208238823b3f05f2a8e281f38a00dd22d9cea07da9fc023c813c089ea27676ec943228a58de852c0238","d06369ae4cb377d69c3fdfce21b979bebe900fe56d4a50ecff231c317f66d9ab16a2e6791a699371b92b632f54002646c820cbd805292f534bd21d0626c037ffc18cc9e919d9381b597ec5e36c642a8e1356ab1925ae06746eb879d3db6b305bcf3615e5","1119d7e9f18ac45a56eaa14015699ccb546a19047947ef4b0e6881a2637ec3ecd9d12b22c5292dd5265a19261fc68a28cfc73155c57e30b92685150bc198029c95c072c469c62243e269486c6ecbc7a81add566def0ecb36243771c785f840f1432c1acb","158a4c996b232de363ed2ccfc92c06c48aa2529c388129a20edecb6769c72ac9af3d69182dcee03415e89cdd85f6d1686ed3f147e19c71662b8a17c95393c52de0fc95be1f029edeab2ceaead36350c4acdfd8afcd2d5a1fdd3e0a5b51e52a36542674ef","c4a2e16a6620c6d65d20634f1b1c263a378a0cc0b3878c442b38b65c71a5ab3742310a74deb8c8ec4996e750b315c4cf4ef031ca2c86c2d60ae25a688138c8c89c23733fcca71d440c0279bf1f89ea17d5a94fe150c1cde58452432ce8be4e26c1858102","c560268629e84baf59c43e695cc58c29202fe7b118087e3123fff688ea74583f4bf4832f646388ed639c88f6cb763f3e994162af69cc9a8a22cc04811529bae6b1cf6ca20279b3f56f24d8380031b322c7e4bf4bd17c0ca7cefbd14379a3abd6a2636228","3ea625ae50761253eb63632625c74b691f2c255017264bf429f83fcda3523e2a7421d6b3e2a947200fc6b64b90708ad21b49122c4363ddf685992571d74b2889bf85ccc8ed22ccdeab2daefea88ae838d800cd70cb75e8e8048aea382c31c1e535630a25","02f2799f6cc72ce7b36305610db3c965efcb410c2fe04fb3c6b36929c0fad2629c220f17618a3ec4c041c92393866cd7ad9764d6434b152f6369d9a043854b3f58c32f4bd11339e483b363d5ce4cab28062d5a986df092cc2fa28a21d7a2c4dc9ce146a5","0a0905ea22cc222264bc085eee2c3eb169281e9c2db3d3de1dc5675dc06164b9eac3c715afe6d5f793d6d93f6206c0a01515248158d305fff0b89079fcddedf2766fd4c063e30e9e9ca39f093e633500d1d97979f6bf0061ea3c78073f7b292665222d63","cc27a379a0dece0e67c4b8d1402217fc02a75530d8b12637fee6c40a8b630ed7b85ac712abea6c2b93c02ee7d7170fc384c8cffbc06f04ead46c5ba24a8a43fd63fc43ae4ae3c92ec5de677e0ad3d1e338a368c0d6389bd5ef79e33f93630f22722f6c9f","2af60eb36c2cc8e0cb272529cecbcfb385a0ed37f6632ac4c9d172e320b36c566383d3792aedf2fc356374a226cd4369541711d1f62702c402e785eb4bde4bd50031d80549faddb5157e2269c3f463ba2cabd538c0af63798520792ca437e0c631eccdca","6b23e234dea22a341ed52ee154ae69e76d30d8c62da098b31e06c8504663814a18abc8cb62b8602c2863c1f8ab884437061b5331cd38e74d26ddce6c63424ba9336c553ccc37a2e36215cc718553a2ccaf2cdbb3dd6e9f204008fb4faa3e52f31d6d05b1","087f47229ce5cec6ae2eb72ccbea1ec05cb37eeb8a850a6e1cd7feab6f68eacbd02a30eb43749cb3c4bdc079431380ea79fc08796328eadacce78129e6377fa96dde68bf5b690a9cea3ec9be5079d59f698a81fb71f343303ec60fe3ce6160051509e60a","287f4117afd0433872b3ced54ee661c645833082da38d76c49de17d035785c31c83562e09cfe0e6363cb79819c08c281c43c53853cf029a2ca6385cfecdfc9b3fcdc5c064b31f80563c8eeda2a3145a2b8437ef2d0e7af9f19638cfa6ee52ef2ec8a6bc5","81e108c4a06d8dd1f6fdda53fc37432c2650a2d66e6343e64365c6cd894e6cf461d085d1dee7e28f60b3ae2b81b8e7b3f2e7227bbcd806c52911e6d49f71be840c0d93f6542d16cc262247ec568a63cddbc02379cc2c15f6bef9262ad52e86375a36cb36","e76388620f762379a5eaaf9fe6a5ce9fa59c0ac7780e22a9633572f6ca374bf1150aa0e32c06262c65a5ea99998378791fe5635010ae282c6c7fc636ad69723479dea046c7d3c75106d6a56c51372d5b7c7eadc32dacfd6f1a9762d0ecf71f85d0c50ffa","34054b79127e8ad774ccd71776c9d2efb674d3f615346d1654df81819f25eac47969dbbc63a279b3f638e67ce15ece2a0c798eae8acfccec656340f24326c0e317c1a55379254b7225ce2fb37f98d52304bf4b9f178ae724f22c6432fd6fd3b32cfc2485","6cd6e1261d6392a263c4d82656da894babb52f2df122c7729fc539af312a872ec305c0b3abe39ce16bf126e18a078579c82ca3b3dc622a8aaf170cf62c276fedb83734e930f0cf16ce71793a53c374d96b780c790ce9a2675b45c81ac52f2ecac77cb6d1","ded964fc41ecb6f223a2cc38c03127043dd3c6699ccb85bba2081b9f56f6f2e19ca3dd690db9522c836f15fb3c2cf6e67019432a153a659f76376df769cb25cda2e1b22aee0d1d38eafb00ad8ac67b9fdd6361c6d1ae4ed6932ce3eec96a4af6c8e7d3cd","8a26d5a9a5c38eebc06c81dd6fe643edf830efc4c4dee1a2c4a50d8893af6af2c3cb4c8ad141292a5da23115c43a003c636ad0eabfab101f47da2cd1c078d53f4637059fd0a2d8a2635c34c0d5ea99e12f2e798561eba5b15c78028e5bd943de7ea00db3","8137dddb36f7023044de62c6d88a3cb39c4081d9e8c7fbec91f2cdf7cb17b10a15c09979d27f23dce17974263a9fccd611ebd39f0b79dafc633a97f2dd2d81fbeacf20da2c26369fb37916a043b8bc9f61799c223a438ae3d5ca17ee9fdbe4dacb6ecb3c","8565c5db2c6d85d08af2279325a581ce262dd8fa63221617412c22d07b3838bce779c18511a2ab1f11c43fc0c4de38e41599dabb72a5f62d5937ae9f486df9f46431439906eac1201ff6613e50308530399fc8fa4a2aefe6052c4bb16f324bd16fcb6ecd","e0e72c2c17f64bcd81b1683ac71bc0c6d1212d97222c0c0c4b7eb32003b223b381afc09fc826239f53b517d9d3d52cf163db2f877eab00cf69c6d12d858af4cbb6ca6992dbf013de0f79df20fe33f2e788380d29c82ce07f639fe7b1dfe11f9fdae7d5cb","2bbf306a97d7c3fd2cb17b466d5b8a2bea85c3de4338d2c52ce5f0cc43d26ce3a480de1726fdd7f2c43b63b1268a5af2722c3acc79e1cd8a76281ae1c524ebd0153dd8f019ab63f48cbe78f1aff7a4fcc0c2da19c5753ff161904bfec032a9ed51f620d7","62fcead6a02091d10f2ce72d4b60c29fa9897515c4fac3fdee7c4ff0d988b36c1e2326d296f626a2d4860ae6cbd9799163ea9cb3d5bb4d9f25de46fd6fee8809d9b363ffa5a699da2a8a2b9f4ab36cd13fa26b8d45e2ba9fb385d8b31a9381cc612b49ff","4eb3b3ffcca475e9d6ea5c0de09fce6956082af13d6f1185dd49818a6af78236f669f09fd07850bf1e6210d0cfa584ec10c663f0bf6f1279f06059913667198567de90bc25b387f7e32c79ec88be258a32819fba0af26c768a7c74de0a38e7fb979386f6","cbead2f645d8e39fd7cdfdd82b4aa7b31765379fa5ab69ca388a9c798db8fbc516cc14a08e4799dc6e9ee62be1a0c8fc76b36331b1a2e6cdf09c5936c1ded09f17a543260ceaa5d0d520b379a0bef9d1df93e69f58219fd826f6df272dceb39fea233a2c","302c9989c6b311d1d12ceab324bf76f02de4719d7cbe8ab37bdbd9f82c3f6f291bd3a9cb3c658a63b3dee1b3e7ae81fcc133e59f0e60e249d22153de1ef622b3a02dd5b3cffa31e708ccc19f396144eda245d09fac636a29d9cd6e91d538b3ca81431bd6","64e61fcf122a05d642cbef3d81d5d12ce7a29fdcd52c3ed788b89c38cf8aabfd40269fdec5f2d5d3f55e0e9fdf31c32df6dc47f08aade79f6336d1f273978af2e6f03ec1cb2b6ec617ed741402cfc99d79a269fad02dc7ae2c1bdba254c3cb9920cb26e7","aca6d3d987eecead854fced15cd7bf9f3bbe692c418823b82ad8c1de6b3a37eb112c51d079792c9654d015362cbee3f6e079b3d7d924da88f6ed9ffc2f756be0af3acdb8afd1642c9fa93c9f96cba726a2cb3ae30d065453f2a279cb2eb37e352920f59f","17648a9d6ce563decb7993f615b319dbcbea2a36dc63609e8ec7cbfccfcf20fc2dea6c3869f2c09fdb8a073a1f2a9fb56c79df7907fd2c2d22b9819f5aa255d3f7b3eac6f9ebd5de016dee2ded2ac9e77cd429b026cb3c"}
+local co9HflAv=table.concat(pKDh1nG1Repc)
+local FxBfq8vPgiDyW0={}
+for TA2m4h=1,#co9HflAv,2 do
+  FxBfq8vPgiDyW0[#FxBfq8vPgiDyW0+1]=tonumber(string.sub(co9HflAv,TA2m4h,TA2m4h+1),16)
 end
-
--- TAB 1: SCRIPT GAMES
-local MainTab = Window:CreateTab("SCRIPT ALL", 4483362458)
-
-MainTab:CreateButton({
-    Name = "Panel Fitur",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Panel-Full-Fitur-Fertour/refs/heads/main/Panel%20Fitur%20By%20Fertour")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Fake Donate Fayint",
-    Callback = function()
-        loadScript("https://fayintz.my.id/api/loader/Fake-Donate")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Paranoia",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Script-CMD/refs/heads/main/ADMIN%20CMD%20FERTOUR")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Backdoor BY NoCounterFamily",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Backdoor-By-NoCounterFamily/refs/heads/main/backdoor")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Copy Map By Fertour (1 click)",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Copy-Map-BY-Fertour/refs/heads/main/Copy%20Map%20BY%20Fertour")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Copy Avatar For Hangout",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/Nearastro/Nearastro/refs/heads/main/00CopyAvaFE.lua")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Fly V3 Fertour",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Terbang-V3-BY-Fertour/refs/heads/main/Terbang%20V3%20Fertour")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Walking Speed",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/Walking-Speed/refs/heads/main/Walking%20Speed%20by%20Fertour")
-    end
-})
-
-MainTab:CreateButton({
-    Name = "Infinity Jump",
-    Callback = function()
-        loadScript("https://raw.githubusercontent.com/fertour/infinity-jump-by-fertour/refs/heads/main/infinity%20jump%20fertour")
-    end
-})
-
--- TAB 2: CREDITS/SUPPORT
-local CreditsTab = Window:CreateTab("CREDITS/SUPPORT", 4483362458)
-
-local CreditsParagraph = CreditsTab:CreateParagraph({
-    Title = "🔥 Credits & Appreciation 🔥",
-    Content = [[
-Script Made By: 🔥 Fertour 🔥
-
-🔥 Big Thanks 🔥
-Special thanks to the Roblox scripting community for inspiration and tools!
-
-🔥 Join Our Community 🔥  
-Click the buttons below to connect with Fertour and get support!
-
-📺 YouTube: 
-💬 Discord: https://discord.gg/4GVX8Trxr
-]]
-})
-
--- YouTube Button
-CreditsTab:CreateButton({
-    Name = "",
-    Callback = function()
-        setclipboard("")
-        Rayfield:Notify({
-            Title = "",
-            Content = "🔥 updates! 🔥",
-            Duration = 6
-        })
-    end
-})
-
--- Discord Button
-CreditsTab:CreateButton({
-    Name = "💬 COPY DISCORD LINK 💬",
-    Callback = function()
-        setclipboard("https://discord.gg/4GVX8Trxr")
-        Rayfield:Notify({
-            Title = "📋 Copied!",
-            Content = "🔥 DISCORD LINK COPIED! Join for keys + support! 🔥",
-            Duration = 6
-        })
-    end
-})
+local rQfORUlmKWzUt={165,202,76,89,161,170,6,191,107,67,188,130,99,12,53,147}
+local Nvfk5oshtOr0_xg=275971831
+local C9CAVtum90y9rLx={}
+local Jsjw1mmaE29z=Nvfk5oshtOr0_xg
+for xapqetxwDp=#FxBfq8vPgiDyW0-1,1,-1 do
+  Jsjw1mmaE29z=(Jsjw1mmaE29z*1664525+1013904223)%4294967296
+  local JGxS_xej2=Jsjw1mmaE29z%(xapqetxwDp+1)+1
+  C9CAVtum90y9rLx[#C9CAVtum90y9rLx+1]={xapqetxwDp+1,JGxS_xej2}
+end
+for TA2m4h=#C9CAVtum90y9rLx,1,-1 do
+  WgYNXTybyd=C9CAVtum90y9rLx[TA2m4h]
+  local cFoxsuCK85=FxBfq8vPgiDyW0[WgYNXTybyd[1]]
+  FxBfq8vPgiDyW0[WgYNXTybyd[1]]=FxBfq8vPgiDyW0[WgYNXTybyd[2]]
+  FxBfq8vPgiDyW0[WgYNXTybyd[2]]=cFoxsuCK85
+end
+local wCk_FusckrX6H={}
+for TA2m4h=1,#FxBfq8vPgiDyW0 do
+  wCk_FusckrX6H[TA2m4h]=string.char(bit32.bxor(FxBfq8vPgiDyW0[TA2m4h],rQfORUlmKWzUt[(TA2m4h-1)%#rQfORUlmKWzUt+1]))
+end
+local hbazXljwoI=table.concat(wCk_FusckrX6H)
+local OxTLLGJpwFpMs0,T5KkCHv9d7q1=loadstring(hbazXljwoI)
+if OxTLLGJpwFpMs0 then
+  OxTLLGJpwFpMs0()
+else
+  error(" x01337 | // @ Monsy | Public Enemy : "..tostring(T5KkCHv9d7q1))
+end
